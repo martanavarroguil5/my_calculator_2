@@ -1,25 +1,43 @@
-<!DOCTPE html>
+<!DOCTYPE html>
 
 <html>
 
-        <head>
+<head>
+    <title>Calculator</title>
+    <meta charset="utf-8">
+</head>
 
-                 <title>Calculator</title>
+<body>
+    <h1>Calculadora de Marta Navarro Guil</h1>
 
-                 <meta charset="utf-8">
+    Number:
 
-        </head>
+    <input type="text" id="n1">
 
-        <body>
+    <p>
+        <button onclick="cube()"> x^3 </button>
+        <button onclick="sine()"> sin </button>
+        <button onclick="power_4()"> x^4</button>
 
-                 <h1>Calculadora de Marta Navarro Guil</h1>
+    </p>
 
-                 Number:
+    <script type="text/javascript">
+        function cube() {
+            var num = document.getElementById("n1");
+            num.value = Math.pow(num.value, 3);
+        }
 
-                 <input type="text" id="n1">
+        function sine() {
+            var num = document.getElementById("n1");
+            // Agrega aquí tu implementación para la función sine
+        }
 
-                 <p>
+        function power_4() {
+            var num = document.getElementById("n1");
+            num.value = Math.pow(num.value, 4);
+        }
 
+<<<<<<< HEAD
                          <button onclick="inverse()"> 1/x </button>
 
                          <button onclick="square()"> x^2 </button>
@@ -76,5 +94,10 @@
                  </script>
 
         </body>
+=======
+    </script>
+</body>
+>>>>>>> e3961cd (arreglo)
 
 </html>
+
